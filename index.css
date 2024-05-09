@@ -109,3 +109,30 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity here */
 }
+
+.bg1-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the pseudo-element */
+    color: rgba(255, 255, 255, 1); /* Set text color to fully opaque white */
+}
+.bg2-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the pseudo-element */
+    color: rgba(255, 255, 255, 1); /* Set text color to fully opaque white */
+}
+
+.tcolor {
+    background-image: linear-gradient(to right, #ef2a0b, #4bc214); /* Adjust colors as needed */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent; /* Hide original text */
+
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+
+}
